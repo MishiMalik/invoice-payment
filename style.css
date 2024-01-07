@@ -122,23 +122,50 @@ input::placeholder {
     background: var(--primary) !important;
 
 }
-
-table thead tr {
-    background-color: var(--primary);
+table{
+    border: 1px solid #9aa0b9;
 }
-
+table thead tr {
+    background-color: var(--primary) !important;
+}
+table tbody tr:hover {
+    background-color: #dddddd !important;
+    cursor: pointer;
+}
+.table>:not(caption)>*>*{
+    background-color: transparent !important;
+}
 table thead tr th {
     white-space: nowrap;
-    color: white;
+    color: white !important;
     font-weight: 500 !important;
-    font-size: 14px;
+    font-size: 14px !important;
+    text-align: center;
 }
 
 table tbody tr td {
     font-size: 14px;
+    text-align: center;
 }
-
-
+.dataTables_info{
+    font-size: 14px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .paging-arrow{
+    color: black;
+    padding: 2px 3px;
+    font-size: 16px;
+    background-color:#dddddd ;
+    cursor: pointer;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .paging-arrow:hover{
+    background-color: var(--primary);
+    color: white !important;
+  }
 /* timeline */
 
 .sessions,
@@ -159,29 +186,44 @@ li {
     position: relative;
     padding-left: 20px;
     margin-left: 10px;
-
-
 }
 
-.sessions li:last-child {
+/* .sessions li:last-child {
     border: 0px;
     padding-bottom: 0;
-}
+} */
 
 .sessions li:before {
     content: '';
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 1px solid #4e5ed3;
-    box-shadow: 3px 3px 0px #bab5f8;
-    box-shadow: 3px 3px 0px #bab5f8;
+    width: 12px;
+    height: 12px;
+    background: gray;
+    /* outline: 1px solid red; */
+    /* border: 1px solid gray; */
+    /* box-shadow: 3px 3px 0px #bab5f8;
+    box-shadow: 3px 3px 0px #bab5f8; */
     border-radius: 50%;
     position: absolute;
-    left: -10px;
+    left: -7.5px;
     top: 0px;
+    z-index: 2;
 }
+.sessions li::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: white;
+    /* outline: 1px solid red; */
+    border: 1px solid gray;
+    /* box-shadow: 3px 3px 0px #bab5f8;
+    box-shadow: 3px 3px 0px #bab5f8; */
+    border-radius: 50%;
+    position: absolute;
+    left: -9px;
+    top: -2px;
+    z-index: 1;
 
+}
 .time {
     color: #2a2839;
     font-family: 'Poppins', sans-serif;
