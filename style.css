@@ -196,19 +196,18 @@ li {
 } */
 
 .sessions li:before {
+
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background: gray;
     /* outline: 1px solid red; */
     /* border: 1px solid gray; */
-    /* box-shadow: 3px 3px 0px #bab5f8;
-    box-shadow: 3px 3px 0px #bab5f8; */
     border-radius: 50%;
     position: absolute;
-    left: -7.5px;
-    top: 0px;
-    z-index: 2;
+    left: -6.5px;
+    top: 1px;
+    z-index: 2
 }
 .sessions li::after {
     content: '';
