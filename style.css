@@ -250,4 +250,9 @@ li {
     .paginate_button {
         padding: 2px 3px !important;
     }
+    .content-card {
+        padding: 15px;
+        min-height: calc(100vh - 110px);
+        padding-bottom: 120px;
+    }
 }
