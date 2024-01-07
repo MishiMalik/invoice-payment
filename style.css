@@ -185,9 +185,7 @@ li {
 
 }
 
-.paginate_button {
-    padding: 2px 3px !important;
-}
+
 
 @media only screen and (max-width:767px) {
     .logo img {
@@ -200,5 +198,8 @@ li {
 
     .heading-primary a i {
         font-size: 20px !important;
+    }
+    .paginate_button {
+        padding: 2px 3px !important;
     }
 }
