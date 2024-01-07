@@ -163,6 +163,7 @@ tr:nth-child(even) {
     cursor: pointer;
     margin-bottom: 0px !important;
     padding-bottom: 0px !important;
+    border: none;
   }
   .paging-arrow:hover{
     background-color: var(--primary);
