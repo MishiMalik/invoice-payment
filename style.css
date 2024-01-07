@@ -9,7 +9,9 @@ body {
 .text-primary {
     color: var(--primary) !important;
 }
-
+.text{
+    font-size: 14px;
+}
 .heading-primary {
     font-size: 22px;
     color: rgb(31, 30, 30);
