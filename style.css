@@ -191,11 +191,14 @@ li {
     margin-left: 10px;
 }
 
-/* .sessions li:last-child {
+
+.sessions li:nth-child(4){
     border: 0px;
     padding-bottom: 0;
-} */
-
+}
+.sessions li:first-child {
+    border-left: 1px solid #abaaed;
+}
 .sessions li:before {
 
     content: '';
